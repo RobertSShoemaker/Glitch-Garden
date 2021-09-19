@@ -18,12 +18,22 @@ public class DefenderSpawner : MonoBehaviour
     {
         Vector2 clickPos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
         Vector2 worldPos = Camera.main.ScreenToWorldPoint(clickPos);
-        return worldPos;
+        Vector2 gridPos = SnapToGrid(worldPos);
+        return gridPos;
+    }
+
+    private Vector2 SnapToGrid(Vector2 rawWorldPos)
+    {
+        float newX = Mathf.RoundToInt(rawWorldPos.x);
+        float newY = Mathf.RoundToInt(rawWorldPos.y);
+        return new Vector2(newX, newY);
+
     }
 
     //Spawns a defender at the location where mouse was clicked
-    private void SpawnDefender(Vector2 position)
+    private void SpawnDefender(Vector2 roundedPos)
     {
-        GameObject newDefender = Instantiate(defender, position, Quaternion.identity) as GameObject;
+        GameObject newDefender = Instantiate(defender, roundedPos, Quaternion.identity) as GameObject;
+        Debug.Log(roundedPos);
     }
 }
