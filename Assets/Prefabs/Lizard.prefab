@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 863865649927108251}
   - component: {fileID: 863865649927108248}
   - component: {fileID: 863865649927108253}
+  - component: {fileID: 865600354}
+  - component: {fileID: 574573885052327140}
+  - component: {fileID: 4770792895137341664}
   m_Layer: 0
   m_Name: Lizard
   m_TagString: Untagged
@@ -115,4 +118,88 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2bf567a8f340884b933fa61fd82d289, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 0.8
+--- !u!60 &865600354
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863865649927108249}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.51, y: 1.86}
+    newSize: {x: 0.81, y: 0.84}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.09472198, y: -0.58753467}
+      - {x: -0.074999996, y: -0.52}
+      - {x: -0.095, y: -0.48}
+      - {x: -0.225, y: -0.48999998}
+      - {x: -0.315, y: -0.24}
+      - {x: -0.375, y: -0.17}
+      - {x: -0.42499998, y: 0.099999994}
+      - {x: -0.48499998, y: 0.17999999}
+      - {x: -0.765, y: 0.17999999}
+      - {x: -0.885, y: -0.04}
+      - {x: -0.905, y: -0.11}
+      - {x: -0.905, y: -0.17999999}
+      - {x: -0.835, y: -0.22999999}
+      - {x: -0.78499997, y: -0.24}
+      - {x: -0.805, y: -0.26}
+      - {x: -0.8321719, y: -0.36118448}
+      - {x: -0.78611064, y: -0.4095835}
+      - {x: -0.745, y: -0.42999998}
+      - {x: -0.805, y: -0.59}
+      - {x: -0.78499997, y: -0.65}
+      - {x: -0.72499996, y: -0.68}
+      - {x: -0.5294595, y: -0.6701389}
+      - {x: -0.39499998, y: -0.68}
+      - {x: -0.325, y: -0.63}
+      - {x: -0.14197966, y: -0.6152082}
+--- !u!114 &574573885052327140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863865649927108249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b9913dcf1af39f44a3fa03ddb8e82cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  deathVFX: {fileID: 1906222994913036, guid: 740c2b3187d56c341b8cb78e8aa925c5, type: 3}
+--- !u!50 &4770792895137341664
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863865649927108249}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

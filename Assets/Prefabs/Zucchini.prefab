@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 775699704259055502}
   - component: {fileID: 2217525626621616279}
   - component: {fileID: 1708395021}
+  - component: {fileID: 635440525502554892}
+  - component: {fileID: 7680899062505712830}
   m_Layer: 0
   m_Name: Zucchini
   m_TagString: Untagged
@@ -96,3 +98,71 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSpeed: 10
+  damage: 50
+--- !u!60 &635440525502554892
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7927322046085924077}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.56, y: 0.56}
+    newSize: {x: 0.56, y: 0.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.20295623, y: 0.2683268}
+      - {x: -0.2515812, y: 0.24282765}
+      - {x: -0.27441072, y: 0.2134552}
+      - {x: -0.27927256, y: 0.19065022}
+      - {x: -0.2683268, y: 0.14867723}
+      - {x: -0.23599195, y: 0.12568125}
+      - {x: -0.1774199, y: 0.10237074}
+      - {x: -0.06731415, y: 0.051521063}
+      - {x: -0.024048567, y: 0.016715527}
+      - {x: 0.077388525, y: -0.09047794}
+      - {x: 0.1517353, y: -0.22609806}
+      - {x: 0.18669333, y: -0.28}
+      - {x: 0.22292161, y: -0.27673995}
+      - {x: 0.2624767, y: -0.25605002}
+      - {x: 0.28003597, y: -0.22376132}
+      - {x: 0.279948, y: -0.18284237}
+      - {x: 0.24031094, y: -0.0776654}
+      - {x: 0.13661358, y: 0.07233483}
+      - {x: -0.03334666, y: 0.21396828}
+      - {x: -0.048960924, y: 0.22761464}
+      - {x: -0.10801585, y: 0.25198415}
+--- !u!50 &7680899062505712830
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7927322046085924077}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
