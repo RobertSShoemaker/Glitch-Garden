@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class DefenderSpawner : MonoBehaviour
 {
-    [SerializeField] GameObject defender;
+    Defender defender;
 
     private void OnMouseDown()
     {
         
         SpawnDefender(GetSquareClicked());
 
+    }
+
+    public void SetSelectedDefender(Defender defenderToSelect)
+    {
+        defender = defenderToSelect;
     }
 
     //Gets the position where the mouse was clicked
@@ -33,7 +38,7 @@ public class DefenderSpawner : MonoBehaviour
     //Spawns a defender at the location where mouse was clicked
     private void SpawnDefender(Vector2 roundedPos)
     {
-        GameObject newDefender = Instantiate(defender, roundedPos, Quaternion.identity) as GameObject;
+        Defender newDefender = Instantiate(defender, roundedPos, Quaternion.identity) as Defender;
         Debug.Log(roundedPos);
     }
 }
