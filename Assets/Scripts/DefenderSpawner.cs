@@ -8,14 +8,28 @@ public class DefenderSpawner : MonoBehaviour
 
     private void OnMouseDown()
     {
-        
-        SpawnDefender(GetSquareClicked());
+
+        AttemptToPlaceDefenderAt(GetSquareClicked());
 
     }
 
+    //selects the defender that was clicked in the menu
     public void SetSelectedDefender(Defender defenderToSelect)
     {
         defender = defenderToSelect;
+    }
+
+    //Checks to see if the player has enough stars before spawning the defender, then spends stars if they do
+    private void AttemptToPlaceDefenderAt(Vector2 gridPos)
+    {
+        var starDisplay = FindObjectOfType<StarDisplay>();
+        int defenderCost = defender.GetStarCost();
+        if (starDisplay.HaveEnoughStars(defenderCost))
+        {
+            SpawnDefender(gridPos);
+            starDisplay.SpendStars(defenderCost);
+        }
+
     }
 
     //Gets the position where the mouse was clicked
@@ -27,6 +41,7 @@ public class DefenderSpawner : MonoBehaviour
         return gridPos;
     }
 
+    //rounds the mouse click location so that the defenders are placed in an exact grid square
     private Vector2 SnapToGrid(Vector2 rawWorldPos)
     {
         float newX = Mathf.RoundToInt(rawWorldPos.x);
