@@ -245,7 +245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abc0d9e96f323de469df42d6632e3348, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defenderPrefab: {fileID: 4447363128110705485}
+  defenderPrefab: {fileID: 4382009002483441167, guid: 670b1756b26e2b6479d0151c7f35b98d, type: 3}
 --- !u!1 &8480861
 GameObject:
   m_ObjectHideFlags: 0
@@ -688,17 +688,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &542218154 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 461967441232406472, guid: fb86c9fd3bd09964da9288f39db85584, type: 3}
-  m_PrefabInstance: {fileID: 461967440690393186}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73de0155670724a41b05b1f4cefbd4b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &593514428
 GameObject:
   m_ObjectHideFlags: 0
@@ -744,7 +733,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abc0d9e96f323de469df42d6632e3348, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defenderPrefab: {fileID: 657839266}
+  defenderPrefab: {fileID: 4200897689289511622, guid: e4a29c5b337f3fb48b28b95c0125db52, type: 3}
 --- !u!61 &593514431
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -822,17 +811,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &657839266 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4200897689289511622, guid: e4a29c5b337f3fb48b28b95c0125db52, type: 3}
-  m_PrefabInstance: {fileID: 4200897688770283108}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73de0155670724a41b05b1f4cefbd4b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &704580625
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1030,7 +1008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abc0d9e96f323de469df42d6632e3348, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defenderPrefab: {fileID: 542218154}
+  defenderPrefab: {fileID: 461967441232406472, guid: fb86c9fd3bd09964da9288f39db85584, type: 3}
 --- !u!1 &1396212473
 GameObject:
   m_ObjectHideFlags: 0
@@ -1406,10 +1384,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gnome
       objectReference: {fileID: 0}
-    - target: {fileID: 461967441232406472, guid: fb86c9fd3bd09964da9288f39db85584, type: 3}
-      propertyPath: starCost
-      value: 100
-      objectReference: {fileID: 0}
     - target: {fileID: 461967441232406474, guid: fb86c9fd3bd09964da9288f39db85584, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -1671,17 +1645,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 670b1756b26e2b6479d0151c7f35b98d, type: 3}
---- !u!114 &4447363128110705485 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4382009002483441167, guid: 670b1756b26e2b6479d0151c7f35b98d, type: 3}
-  m_PrefabInstance: {fileID: 4447363128110705484}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73de0155670724a41b05b1f4cefbd4b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &9027849834341996839
 PrefabInstance:
   m_ObjectHideFlags: 0
