@@ -23,13 +23,14 @@ public class AttackerSpawner : MonoBehaviour
         }
     }
 
-    //instantiate the attacker
+    //spawn the attacker randomly from the array of attackers
     private void SpawnAttacker()
     {
         int randomAttacker = UnityEngine.Random.Range(0, attackerPrefabArray.Length);
         Spawn(attackerPrefabArray[randomAttacker]);
     }
 
+    //instantiate the attacker
     private void Spawn(Attacker myAttacker)
     {
         Attacker newAttacker = Instantiate(myAttacker, transform.position, transform.rotation) as Attacker;

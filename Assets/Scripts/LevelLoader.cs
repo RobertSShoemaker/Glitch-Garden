@@ -19,6 +19,7 @@ public class LevelLoader : MonoBehaviour
         }
     }
 
+    //adds a delay before loading next scene
     IEnumerator WaitForTime()
     {
         yield return new WaitForSeconds(loadDelay);
@@ -29,5 +30,10 @@ public class LevelLoader : MonoBehaviour
     public void LoadNextScene()
     {
         SceneManager.LoadScene(currentSceneIndex + 1);
+    }
+
+    public void LoadGameOver()
+    {
+        SceneManager.LoadScene("Game Over Screen");
     }
 }
