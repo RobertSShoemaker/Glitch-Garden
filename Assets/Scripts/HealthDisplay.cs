@@ -29,7 +29,7 @@ public class HealthDisplay : MonoBehaviour
         UpdateDisplay();
         if (health <= 0)
         {
-            FindObjectOfType<LevelLoader>().LoadGameOver();
+            FindObjectOfType<LevelController>().HandleLoseCondition();
         }
     }
 }

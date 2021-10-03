@@ -6,6 +6,7 @@ using UnityEngine;
 public class LevelController : MonoBehaviour
 {
     [SerializeField] GameObject winLabel;
+    [SerializeField] GameObject loseLabel;
     [SerializeField] int winDelay = 5;
     int numberOfAttackers = 0;
     bool levelTimerFinished = false;
@@ -13,8 +14,9 @@ public class LevelController : MonoBehaviour
     
     private void Start()
     {
-        //stops scene from displaying the win message at the start of the game
+        //stops scene from displaying the win/lose message at the start of the game
         winLabel.SetActive(false);
+        loseLabel.SetActive(false);
     }
 
     //keeps track of the number of Attackers on screen; add one when an attacker spawns
@@ -41,6 +43,12 @@ public class LevelController : MonoBehaviour
         GetComponent<AudioSource>().Play();
         yield return new WaitForSeconds(winDelay);
         GetComponent<LevelLoader>().LoadNextScene();
+    }
+
+    public void HandleLoseCondition()
+    {
+        loseLabel.SetActive(true);
+        Time.timeScale = 0;
     }
 
     //stops spawning attackers when the time runs out; called by GameTimer
