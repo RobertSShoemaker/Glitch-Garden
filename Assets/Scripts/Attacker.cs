@@ -9,6 +9,18 @@ public class Attacker : MonoBehaviour
     float currentSpeed = 1f;
     GameObject currentTarget;
 
+    //adds 1 to the number of attackers as soon as Attacker is created
+    private void Awake()
+    {
+        FindObjectOfType<LevelController>().AttackerSpawned();
+    }
+
+    //subtracts 1 from the number of attacekrs as soon as Attacker is destroyed
+    private void OnDestroy()
+    {
+        FindObjectOfType<LevelController>().AttackerKilled();
+    }
+
 
     void Update()
     {

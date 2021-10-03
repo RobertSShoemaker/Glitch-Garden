@@ -7,10 +7,14 @@ public class GameTimer : MonoBehaviour
 {
     [Tooltip("Our level timer in SECONDS")]
     [SerializeField] float levelTime = 10;
+    bool triggeredLevelFinished = false;
 
     // Update is called once per frame
     void Update()
     {
+        //stop checking the time left in the level once we've reached the end of the set time
+        if(triggeredLevelFinished) { return; }
+
         //Slider progress will be based on the amount of time left in level
         GetComponent<Slider>().value = Time.timeSinceLevelLoad / levelTime;
 
@@ -18,8 +22,8 @@ public class GameTimer : MonoBehaviour
         bool timerFinished = (Time.timeSinceLevelLoad >= levelTime);
         if (timerFinished)
         {
-            //TODO end level when time has expired
-            Debug.Log("Level timer expired!");
+            FindObjectOfType<LevelController>().LevelTimerFinished();
+            triggeredLevelFinished = true;
         }
     }
 }

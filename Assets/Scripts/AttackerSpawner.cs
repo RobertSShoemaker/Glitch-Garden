@@ -23,6 +23,12 @@ public class AttackerSpawner : MonoBehaviour
         }
     }
 
+    //stop spawning attackers from this Attacker Spawner; called by LevelController
+    public void StopSpawning()
+    {
+        spawn = false;
+    }
+
     //spawn the attacker randomly from the array of attackers
     private void SpawnAttacker()
     {
