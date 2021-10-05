@@ -8,12 +8,14 @@ public class DefenderSpawner : MonoBehaviour
 
     private void OnMouseDown()
     {
-
-        AttemptToPlaceDefenderAt(GetSquareClicked());
+        if (defender != null)
+        {
+            AttemptToPlaceDefenderAt(GetSquareClicked());
+        }
 
     }
 
-    //selects the defender that was clicked in the menu
+    //selects the defender that was clicked in the menu, called by DefenderButton 
     public void SetSelectedDefender(Defender defenderToSelect)
     {
         defender = defenderToSelect;

@@ -18,7 +18,11 @@ public class Attacker : MonoBehaviour
     //subtracts 1 from the number of attacekrs as soon as Attacker is destroyed
     private void OnDestroy()
     {
-        FindObjectOfType<LevelController>().AttackerKilled();
+        LevelController levelController = FindObjectOfType<LevelController>();
+        if (levelController != null)
+        {
+            levelController.AttackerKilled();
+        }
     }
 
 
