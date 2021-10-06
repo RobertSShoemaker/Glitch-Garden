@@ -26,16 +26,23 @@ public class LevelLoader : MonoBehaviour
         LoadNextScene();
     }
 
+    //need to set the timeScale back to normal after freezing time when the player loses
     public void RestartScene()
     {
         Time.timeScale = 1;
         SceneManager.LoadScene(currentSceneIndex);
     }
 
+    //need to set the timeScale back to normal after freezing time when the player loses
     public void LoadMainMenu()
     {
         Time.timeScale = 1;
         SceneManager.LoadScene("Start Screen");
+    }
+
+    public void LoadOptionsMenu()
+    {
+        SceneManager.LoadScene("Options Screen");
     }
 
     public void LoadNextScene()
