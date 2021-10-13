@@ -447,9 +447,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1879372023}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
-  m_Value: 1
+  m_MaxValue: 2
+  m_WholeNumbers: 1
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1233,63 +1233,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1001 &1529635373
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1768950101110768611, guid: 82026accdcec2394d9624dcd83e0b32b, type: 3}
-      propertyPath: m_Name
-      value: Music Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 7971571320606802975, guid: 82026accdcec2394d9624dcd83e0b32b, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7971571320606802975, guid: 82026accdcec2394d9624dcd83e0b32b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 381.50812
-      objectReference: {fileID: 0}
-    - target: {fileID: 7971571320606802975, guid: 82026accdcec2394d9624dcd83e0b32b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 234.2318
-      objectReference: {fileID: 0}
-    - target: {fileID: 7971571320606802975, guid: 82026accdcec2394d9624dcd83e0b32b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -7781.985
-      objectReference: {fileID: 0}
-    - target: {fileID: 7971571320606802975, guid: 82026accdcec2394d9624dcd83e0b32b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7971571320606802975, guid: 82026accdcec2394d9624dcd83e0b32b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7971571320606802975, guid: 82026accdcec2394d9624dcd83e0b32b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7971571320606802975, guid: 82026accdcec2394d9624dcd83e0b32b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7971571320606802975, guid: 82026accdcec2394d9624dcd83e0b32b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7971571320606802975, guid: 82026accdcec2394d9624dcd83e0b32b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7971571320606802975, guid: 82026accdcec2394d9624dcd83e0b32b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 82026accdcec2394d9624dcd83e0b32b, type: 3}
 --- !u!1 &1549442007
 GameObject:
   m_ObjectHideFlags: 0
@@ -1883,13 +1826,21 @@ PrefabInstance:
       propertyPath: volumeSlider
       value: 
       objectReference: {fileID: 1433599198}
+    - target: {fileID: 3353865358355360446, guid: 28f417281d0ea3e4ba8b7c4ac90563e0, type: 3}
+      propertyPath: difficultySlider
+      value: 
+      objectReference: {fileID: 573088579}
+    - target: {fileID: 3353865358355360446, guid: 28f417281d0ea3e4ba8b7c4ac90563e0, type: 3}
+      propertyPath: defaultDifficulty
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3353865358355360447, guid: 28f417281d0ea3e4ba8b7c4ac90563e0, type: 3}
       propertyPath: m_Name
       value: Options Controller
       objectReference: {fileID: 0}
     - target: {fileID: 3353865358355360577, guid: 28f417281d0ea3e4ba8b7c4ac90563e0, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3353865358355360577, guid: 28f417281d0ea3e4ba8b7c4ac90563e0, type: 3}
       propertyPath: m_LocalPosition.x

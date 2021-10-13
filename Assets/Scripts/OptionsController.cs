@@ -7,15 +7,19 @@ public class OptionsController : MonoBehaviour
 {
     [SerializeField] Slider volumeSlider;
     [SerializeField] float defaultVolume = 0.8f;
+    [SerializeField] Slider difficultySlider;
+    [SerializeField] float defaultDifficulty = 0f;
     // Start is called before the first frame update
     void Start()
     {
         volumeSlider.value = PlayerPrefsController.GetMasterVolume();
+        difficultySlider.value = PlayerPrefsController.GetDifficulty();
     }
 
-    //Set the music volume to the slider value
+    
     void Update()
     {
+        //Set the music volume to the slider value
         var musicPlayer = FindObjectOfType<MusicPlayer>();
         if (musicPlayer)
         {
@@ -25,12 +29,14 @@ public class OptionsController : MonoBehaviour
         {
             Debug.LogWarning("No music player found...did you start from splash screen?");
         }
+
     }
 
     //when player clicks the Back button the settings will save
     public void SaveAndExit()
     {
         PlayerPrefsController.SetMasterVolume(volumeSlider.value);
+        PlayerPrefsController.SetDifficulty(difficultySlider.value);
         FindObjectOfType<LevelLoader>().LoadMainMenu();
     }
 
@@ -38,6 +44,7 @@ public class OptionsController : MonoBehaviour
     public void SetDefaults()
     {
         volumeSlider.value = defaultVolume;
+        difficultySlider.value = defaultDifficulty;
 
     }
 
