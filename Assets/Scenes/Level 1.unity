@@ -1235,10 +1235,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gravestone
       objectReference: {fileID: 0}
-    - target: {fileID: 4200897689289511621, guid: e4a29c5b337f3fb48b28b95c0125db52, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4200897689289511623, guid: e4a29c5b337f3fb48b28b95c0125db52, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1297,6 +1293,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 277450554}
     m_Modifications:
+    - target: {fileID: 1014927809301760632, guid: 670b1756b26e2b6479d0151c7f35b98d, type: 3}
+      propertyPath: health
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 4447363128648025840, guid: 670b1756b26e2b6479d0151c7f35b98d, type: 3}
       propertyPath: m_Name
       value: Trophy
